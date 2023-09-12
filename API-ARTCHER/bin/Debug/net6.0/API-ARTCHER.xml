@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API-ARTCHER</name>
+    </assembly>
+    <members>
+        <member name="M:API_ARTCHER.Controllers.FilialController.CadastroFilial(API_ARTCHER.Data.DTO.CreateFilialDto)">
+            <summary>
+            Adiciona uma Filial ao banco de dados
+            </summary>
+            <param name="FilialDto">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+            
+        </member>
+        <member name="M:API_ARTCHER.Controllers.FilialController.AtualizarFilial(System.Int32,API_ARTCHER.Data.DTO.CreateFilialDto)">
+             <summary>
+            Atualiza uma filial ao banco de dados
+             </summary>
+             <param name="FilialDto">Objeto com os campos necessários para criação de um filme</param>
+             <returns>IActionResult</returns>
+             <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.FilialController.RecuperaFilialID(System.Int32)">
+            <summary>
+            Faz a busca da filial no banco de dados
+            </summary>
+            <param name="id">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.FilialController.DeleteFilialID(System.Int32)">
+            <summary>
+            Apaga uma filial ao banco de dados
+            </summary>
+            <param name="id">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.LoginController.CadastroLogin(API_ARTCHER.Models.Login)">
+            <summary>
+            Adiciona uma Filial ao banco de dados
+            </summary>
+            <param name="login"></param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+            
+        </member>
+        <member name="M:API_ARTCHER.Controllers.LoginController.RecuperaLoginID(System.Int32)">
+            <summary>
+            Faz uma busca pelo usuario atravez do  banco de dados
+            </summary>
+            <param name="id">Objeto com os campos necessários</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.LoginController.RecuperaLogin(System.Int32,API_ARTCHER.Data.DTO.UpdateLogin)">
+            <summary>
+            Atualiza um usuario ao banco de dados
+            </summary>
+            <param name="UpdateUsuario">Objeto para atualizar</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.LoginController.deletaLogin(System.Int32)">
+            <summary>
+            Apaga um Usuario ao banco de dados
+            </summary>
+            <param name="id">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.UsuarioController.CadastroCliente(API_ARTCHER.Data.DTO.CreateUsuarioDto)">
+            <summary>
+            Adiciona um Usuario ao banco de dados
+            </summary>
+            <param name="createDto">Object Create</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.UsuarioController.LoginUsuario(API_ARTCHER.Data.DTO.LoginDto)">
+            <summary>
+            Valida o login do Usuario ao banco de dados
+            </summary>
+            <param name="dto">Object transfer</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.UsuarioController.RecuperaUsuarioID(System.Int32)">
+            <summary>
+            Faz uma busca pelo usuario atravez do  banco de dados
+            </summary>
+            <param name="id">Objeto com os campos necessários</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.UsuarioController.RecuperaUsuario(System.Int32,API_ARTCHER.Data.DTO.UpdateUsuario)">
+            <summary>
+            Atualiza um usuario ao banco de dados
+            </summary>
+            <param name="UpdateUsuario">Objeto para atualizar</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:API_ARTCHER.Controllers.UsuarioController.deletausuario(System.Int32)">
+            <summary>
+            Apaga um Usuario ao banco de dados
+            </summary>
+            <param name="id">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="T:API_ARTCHER.Migrations.OracleInicial">
+            <inheritdoc />
+        </member>
+        <member name="M:API_ARTCHER.Migrations.OracleInicial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_ARTCHER.Migrations.OracleInicial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_ARTCHER.Migrations.OracleInicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
