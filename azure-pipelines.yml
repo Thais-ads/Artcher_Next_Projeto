@@ -1,10 +1,5 @@
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'restore'
-    projects: '**/*.csproj'
-    feedsToUse: 'select'
-- task: DotNetCoreCLI@2
-  inputs:
     command: 'build'
     projects: '**/*.csproj'
     arguments: '--configuration Release'
@@ -20,6 +15,13 @@
     command: 'test'
     projects: '**/*[Tt]ests/*.csproj'
     arguments: '--configuration Release'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '**/*.csproj'
+    feedsToUse: 'select'
+
   
 - task: PublishBuildArtifacts@1
   inputs:
